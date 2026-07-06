@@ -12,7 +12,7 @@ function Footer() {
 
           {/* Brand Column */}
           <div>
-            <img src={'public/logo1.png'} alt="logo" className="md:h-[55px] h-[45px] mb-5" />
+            <img src={'dist/logo1.png'} alt="logo" className="md:h-[55px] h-[45px] mb-5" />
             <p className="text-gray-400 text-sm leading-6 max-w-sm">
               Edet Akpan Avenue, Uyo, Akwa Ibom State.
               Opening Hours: Monday - Friday (8am - 5pm)
