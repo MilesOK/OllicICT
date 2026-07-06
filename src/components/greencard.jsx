@@ -61,7 +61,7 @@ const Greencard = () => {
               <div className="flex-shrink-0 w-full max-w-[220px] sm:max-w-[260px] lg:max-w-[320px] mx-auto lg:mx-0">
                 <img
                   className="w-full rounded-2xl shadow-2xl shadow-black/30 animate-float hover:scale-105 transition-transform duration-500 object-cover"
-                  src="public\discount.jpg"
+                  src="/discount.jpg"
                   alt="Discount offer"
                 />
               </div>
