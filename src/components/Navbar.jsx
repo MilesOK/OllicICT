@@ -37,7 +37,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
             <img
-              src={'dist/logo.png'}
+              src={'/logo.png'}
               alt="Ollic Logo"
               className="h-7 md:h-10 transition-transform duration-300 hover:scale-105"
             />
