@@ -49,21 +49,21 @@ function Section2() {
       description: 'Join our Cloud Computing course and learn the skills to store, manage and process data through powerful internet technologies',
       duration: '5 Months',
       students: '20+',
-      image: 'dist/cloud.jpg',
+      image: '/cloud.jpg',
     },
     {
       title: 'Machine Learning / AI Automation',
       description: 'Join our Machine Learning course ad discover how computers learn from data to make smart decisions.',
       duration: '5 Months',
       students: '20+',
-      image: 'dist/machine.jpg',
+      image: '/machine.jpg',
     },
     {
       title: 'AI Prompt Engineering',
       description: 'With good AI prompting skill, you can build tools and products without knowing how to code',
       duration: '3 Months',
       students: '20+',
-      image: 'dist/cloud.jpg',
+      image: '/cloud.jpg',
     },
   ];
 
