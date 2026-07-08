@@ -2,10 +2,10 @@
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Jenkins",
-    role: "Full Stack Developer",
+    name: "Daniel Anthony",
+    role: "Frontend Developer",
     text: "Ollic ICT completely transformed my career path. The instructors are top-notch and the curriculum is constantly updated with modern tech stacks.",
-    image: "https://randomuser.me/api/portraits/women/44.jpg"
+    image: "/Dan.jpeg"
   },
   {
     id: 2,
