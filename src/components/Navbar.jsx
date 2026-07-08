@@ -36,11 +36,12 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
-            <img
+            {/* <img
               src={'/logo.png'}
               alt="Ollic Logo"
               className="h-7 md:h-10 transition-transform duration-300 hover:scale-105"
-            />
+            /> */}
+            <h2 className="text-2xl md:text-3xl font-extrabold tracking-tighter bg-gradient-to-r from-teal-600 to-teal-400 bg-clip-text text-transparent drop-shadow-sm">Ollic <span className="bg-gradient-to-r from-orange-500 to-orange-400 bg-clip-text text-transparent">ICT</span></h2>
           </Link>
 
           {/* Desktop Navigation */}

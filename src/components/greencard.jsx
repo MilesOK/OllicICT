@@ -29,9 +29,9 @@ const Greencard = () => {
                   </span>
 
                   <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-snug max-w-2xl mx-auto lg:mx-0">
-                    We Are Offering Digital Skills Training That Is{" "}
-                    <span className="text-brand-orange-400">Affordable</span> And{" "}
-                    <span className="text-brand-orange-400">Accessible</span>
+                    We Are Offering Digital Skills Training {" "}
+                    <span className="text-brand-orange-400">At</span> 50% {" "}
+                    <span className="text-brand-orange-400">discount.</span>
                   </h2>
                 </div>
 

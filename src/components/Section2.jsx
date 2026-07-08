@@ -34,7 +34,7 @@ function Section2() {
       description: 'Build Robust and highly functional apps for iOS and Android using Flutter or React Native.',
       duration: '5 Months',
       students: '90+',
-      image: mobile,
+      image: '/mobileApp.jpg',
     },
 
     {
@@ -49,7 +49,7 @@ function Section2() {
       description: 'Join our Cloud Computing course and learn the skills to store, manage and process data through powerful internet technologies',
       duration: '5 Months',
       students: '20+',
-      image: '/cloud.jpg',
+      image: '/cloud22.jpg',
     },
     {
       title: 'Machine Learning / AI Automation',

@@ -8,6 +8,7 @@ import Section4 from './components/Section4'
 import Section5 from './components/Section5'
 import Secondary from './components/secondary'
 import GreenCard from './components/greencard'
+import Testimonials from './components/Testimonials'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <GreenCard/>
       <Section4 />
       <Section5 />
+      <Testimonials />
       <Secondary />
       <Footer />
      </div>

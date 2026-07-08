@@ -61,7 +61,7 @@ function Section1() {
               <h1 className="text-3xl md:text-[42px] lg:text-[48px] font-bold text-gray-900 lg:leading-[60px] md:leading-[52px] leading-[44px]">
                 <span>
                   <span className="bg-gradient-to-r from-green-300 to-orange-500 px-4 py-1 rounded-xl text-white">Digital Skills</span>
-                 <span className='mx-2'>Training Program.</span>
+                 <h2 className='mt-2'>Training Program.</h2>
                 </span>
                   {/* <span className="absolute bottom-0.5 left-0 w-full h-1 bg-gradient-to-r from-teal-400 to-orange-400 rounded-full" /> */}
               
