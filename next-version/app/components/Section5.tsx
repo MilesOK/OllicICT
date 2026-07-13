@@ -1,19 +1,12 @@
-import img1 from '../assets/img1.jpg'
-import img2 from '../assets/img2.jpg'
-import img3 from '../assets/img3.jpg'
-import img4 from '../assets/img4.jpg'
-import img5 from '../assets/img5.jpg'
-import img6 from '../assets/img6.jpg'
-import img7 from '../assets/img7.jpg'
-import img8 from '../assets/img8.jpg'
-import img9 from '../assets/img9.jpg'
-import img10 from '../assets/img10.jpg'
-import img11 from '../assets/img11.jpg'
-import img12 from '../assets/img12.jpg'
+import Image from "next/image";
+
+const images = [
+  "/img1.jpg", "/img2.jpg", "/img3.jpg", "/img4.jpg",
+  "/img5.jpg", "/img6.jpg", "/img7.jpg", "/img8.jpg",
+  "/img9.jpg", "/img10.jpg", "/img11.jpg", "/img12.jpg",
+];
 
 function Section5() {
-  const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12];
-
   return (
     <section className="section-padding bg-white">
       <div className="max-w-7xl mx-auto">
@@ -26,9 +19,11 @@ function Section5() {
               key={i}
               className="gallery-item rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-400 group"
             >
-              <img
+              <Image
                 src={img}
                 alt={`Ollic ICT Gallery ${i + 1}`}
+                width={400}
+                height={300}
                 className="w-full h-40 sm:h-48 md:h-52 object-cover transition-transform duration-500 group-hover:scale-110"
               />
             </div>
@@ -36,7 +31,7 @@ function Section5() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Section5
+export default Section5;

@@ -1,11 +1,12 @@
+"use client";
 
-import hero from '../assets/hero.png'
-import { Link } from 'react-router-dom'
-import { useEffect, useRef, useState } from 'react'
+import Link from "next/link";
+import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 
-function AnimatedStat({ value, label, color }) {
+function AnimatedStat({ value, label, color }: { value: string; label: string; color: string }) {
   const [count, setCount] = useState(0);
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
   const numericValue = parseInt(value);
 
   useEffect(() => {
@@ -61,19 +62,17 @@ function Section1() {
               <h1 className="text-3xl md:text-[42px] lg:text-[48px] font-bold text-gray-900 lg:leading-[60px] md:leading-[52px] leading-[44px]">
                 <span>
                   <span className="bg-gradient-to-r from-green-300 to-orange-500 px-4 py-1 rounded-xl text-white">Digital Skills</span>
-                 <h2 className='mt-2'>Training Program.</h2>
+                 <h2 className="mt-2">Training Program.</h2>
                 </span>
-                  {/* <span className="absolute bottom-0.5 left-0 w-full h-1 bg-gradient-to-r from-teal-400 to-orange-400 rounded-full" /> */}
-              
               </h1>
               <br />
               <h4 className="text-lg md:text-2xl text-gray-800 font-semibold">Learn Digital Skills And Qualify For Well-Paying Remote Jobs</h4>
               <br />
               <p className="text-gray-600 leading-relaxed text-[15px] md:text-base max-w-lg">
-                With our hands-on training, personalized career coaching, and a network of industry connections, we'll
+                With our hands-on training, personalized career coaching, and a network of industry connections, we&apos;ll
                 have you ready to launch your Tech career in just 6 months
               </p>
-              <Link to="https://wa.link/wj8kss">
+              <Link href="https://wa.link/wj8kss">
                 <button className="gradient-btn mt-7 text-white px-9 py-3.5 text-base font-semibold rounded-full shadow-lg">
                   Enroll Now
                 </button>
@@ -95,9 +94,11 @@ function Section1() {
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%] bg-gradient-to-br from-orange-200/40 to-teal-200/40 rounded-full blur-2xl pointer-events-none" />
 
               <div className="relative">
-                <img
-                  src={hero}
+                <Image
+                  src="/hero.png"
                   alt="Student with laptop"
+                  width={500}
+                  height={500}
                   className="w-full max-w-md lg:max-w-lg h-auto relative z-10 drop-shadow-2xl"
                 />
               </div>
@@ -106,7 +107,7 @@ function Section1() {
         </div>
       </main>
     </>
-  )
+  );
 }
 
-export default Section1
+export default Section1;

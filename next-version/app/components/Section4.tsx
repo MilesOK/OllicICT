@@ -1,26 +1,26 @@
-import whotoenroll from '../assets/whotoenroll.svg'
-import { FiArrowRight, FiCheck } from 'react-icons/fi'
+import Image from "next/image";
+import { FiArrowRight, FiCheck } from "react-icons/fi";
 
 function Section4() {
   const enrollList = [
-    'Graduates',
-    'Job Seekers',
-    'Those interested in travelling abroad',
-    'Tech enthusiast',
-    'Students',
-    'Working class - who wants to earn extra income',
-    'Business owners - who want to learn how to scale their business digitally',
+    "Graduates",
+    "Job Seekers",
+    "Those interested in travelling abroad",
+    "Tech enthusiast",
+    "Students",
+    "Working class - who wants to earn extra income",
+    "Business owners - who want to learn how to scale their business digitally",
   ];
 
   const whyUsList = [
-    'Easy Certification with CISCO',
-    'Conducive Learning Environment',
-    'Uninterrupted Power Supply',
-    '100% Practical Training',
-    '24/7 Free and Fast WiFi',
-    'Guaranteed Internship after Training',
-    'Lifetime Career Support',
-    '100% Money Back Guarantee',
+    "Easy Certification with CISCO",
+    "Conducive Learning Environment",
+    "Uninterrupted Power Supply",
+    "100% Practical Training",
+    "24/7 Free and Fast WiFi",
+    "Guaranteed Internship after Training",
+    "Lifetime Career Support",
+    "100% Money Back Guarantee",
   ];
 
   return (
@@ -48,9 +48,11 @@ function Section4() {
           <div className="flex items-center justify-center md:order-none order-first">
             <div className="relative">
               <div className="absolute -inset-6 bg-gradient-to-br from-teal-100 to-orange-100 rounded-3xl opacity-50 blur-md pointer-events-none" />
-              <img
-                src={whotoenroll}
+              <Image
+                src="/whotoenroll.svg"
                 alt="Who can enroll illustration"
+                width={384}
+                height={384}
                 className="relative w-full max-w-sm drop-shadow-lg"
               />
             </div>
@@ -75,7 +77,7 @@ function Section4() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Section4
+export default Section4;

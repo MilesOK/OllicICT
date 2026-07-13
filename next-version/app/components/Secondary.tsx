@@ -1,7 +1,6 @@
-import { Link } from 'react-router-dom'
+import Link from "next/link";
 
-const secondary = () => {
-
+const Secondary = () => {
   return (
     <section className="relative overflow-hidden py-20 md:py-28 px-4">
       {/* Gradient background */}
@@ -20,14 +19,14 @@ const secondary = () => {
         <p className="text-base md:text-lg text-white/80 max-w-2xl leading-relaxed">
           While awaiting university admission, enroll in our program to become proficient with computers and build a solid foundation in Software Development
         </p>
-        <Link to="https://wa.link/wj8kss">
+        <Link href="https://wa.link/wj8kss">
           <button className="gradient-btn text-white font-semibold px-9 py-3.5 rounded-full text-base mt-2 shadow-lg">
             Enroll Now
           </button>
         </Link>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default secondary
+export default Secondary;
