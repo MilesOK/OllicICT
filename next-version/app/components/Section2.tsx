@@ -1,69 +1,63 @@
-
-import backend from '../assets/backend.jpg'
-import frontend from '../assets/frontend.svg'
-import fullstack from '../assets/fullstack.jpg'
-import mobile from '../assets/mobile.jpg'
-import { Link } from 'react-router-dom'
-
+import Link from "next/link";
+import Image from "next/image";
 
 function Section2() {
   const courses = [
     {
-      title: 'Frontend Engineering',
-      description: 'Become a frontend engineer amd build seamless user interface and user experience logic.',
-      duration: '4 Months',
-      students: '120+',
-      image: frontend,
+      title: "Frontend Engineering",
+      description: "Become a frontend engineer amd build seamless user interface and user experience logic.",
+      duration: "4 Months",
+      students: "120+",
+      image: "/frontend.svg",
     },
     {
-      title: 'Backend Engineering',
-      description: 'Build powerful web applications using our tailored backend engineering course outline.',
-      duration: '4 Months',
-      students: '100+',
-      image: backend,
+      title: "Backend Engineering",
+      description: "Build powerful web applications using our tailored backend engineering course outline.",
+      duration: "4 Months",
+      students: "100+",
+      image: "/backend.jpg",
     },
     {
-      title: 'Full Stack Web Development',
-      description: 'Become a FullStack web developer Maestro with building fully functional web apps.',
-      duration: '6 Months',
-      students: '50+',
-      image: fullstack,
+      title: "Full Stack Web Development",
+      description: "Become a FullStack web developer Maestro with building fully functional web apps.",
+      duration: "6 Months",
+      students: "50+",
+      image: "/fullstack.jpg",
     },
     {
-      title: 'Mobile App Development',
-      description: 'Build Robust and highly functional apps for iOS and Android using Flutter or React Native.',
-      duration: '5 Months',
-      students: '90+',
-      image: '/mobileApp.jpg',
-    },
-
-    {
-      title: 'Python Development',
-      description: 'Everything can be done using python - Web, Mobile, AI, Data! Get started Today!',
-      duration: '5 Months',
-      students: '80+',
-      image: mobile,
+      title: "Mobile App Development",
+      description: "Build Robust and highly functional apps for iOS and Android using Flutter or React Native.",
+      duration: "5 Months",
+      students: "90+",
+      image: "/mobileApp.jpg",
     },
     {
-      title: 'Cloud Computing',
-      description: 'Join our Cloud Computing course and learn the skills to store, manage and process data through powerful internet technologies',
-      duration: '5 Months',
-      students: '20+',
-      image: '/cloud22.jpg',
+      title: "Python Development",
+      description: "Everything can be done using python - Web, Mobile, AI, Data! Get started Today!",
+      duration: "5 Months",
+      students: "80+",
+      image: "/mobile.jpg",
     },
     {
-      title: 'Machine Learning / AI Automation',
-      description: 'Join our Machine Learning course ad discover how computers learn from data to make smart decisions.',
-      duration: '5 Months',
-      students: '20+',
-      image: '/machine.jpg',
+      title: "Cloud Computing",
+      description: "Join our Cloud Computing course and learn the skills to store, manage and process data through powerful internet technologies",
+      duration: "5 Months",
+      students: "20+",
+      image: "/cloud22.jpg",
     },
     {
-      title: 'AI Prompt Engineering',
-      description: 'With good AI prompting skill, you can build tools and products without knowing how to code',
-      duration: '3 Months',
-      students: '20+',
-      image: '/cloud.jpg',
+      title: "Machine Learning / AI Automation",
+      description: "Join our Machine Learning course ad discover how computers learn from data to make smart decisions.",
+      duration: "5 Months",
+      students: "20+",
+      image: "/machine.jpg",
+    },
+    {
+      title: "AI Prompt Engineering",
+      description: "With good AI prompting skill, you can build tools and products without knowing how to code",
+      duration: "3 Months",
+      students: "20+",
+      image: "/cloud.jpg",
     },
   ];
 
@@ -88,10 +82,12 @@ function Section2() {
             >
               {/* Card Image */}
               <div className="relative overflow-hidden h-44">
-                <img
+                <Image
                   src={course.image}
                   alt={course.title}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
@@ -112,10 +108,10 @@ function Section2() {
                     </svg>
                     {course.duration}
                   </span>
-                  <Link to="https://wa.link/wj8kss">
-                  <button className="gradient-btn text-white text-sm px-5 py-2 rounded-full font-semibold">
-                    Enroll Now
-                  </button>
+                  <Link href="https://wa.link/wj8kss">
+                    <button className="gradient-btn text-white text-sm px-5 py-2 rounded-full font-semibold">
+                      Enroll Now
+                    </button>
                   </Link>
                 </div>
               </div>

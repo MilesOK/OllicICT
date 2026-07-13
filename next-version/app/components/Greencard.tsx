@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
+import Image from "next/image";
 import { FiCheck, FiArrowRight } from "react-icons/fi";
 import { HiOutlineSparkles } from "react-icons/hi2";
 
@@ -21,16 +22,14 @@ const Greencard = () => {
               {/* Text column */}
               <div className="flex flex-col gap-5 text-center lg:text-left lg:flex-1">
                 <div>
-                  <span
-                    className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold uppercase tracking-widest text-brand-orange-300 mb-3"
-                  >
+                  <span className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold uppercase tracking-widest text-brand-orange-300 mb-3">
                     <HiOutlineSparkles className="w-4 h-4" />
                     Limited‑Time Offer
                   </span>
 
                   <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-snug max-w-2xl mx-auto lg:mx-0">
-                    We Are Offering Digital Skills Training {" "}
-                    <span className="text-brand-orange-400">At</span> 50% {" "}
+                    We Are Offering Digital Skills Training{" "}
+                    <span className="text-brand-orange-400">At</span> 50%{" "}
                     <span className="text-brand-orange-400">discount.</span>
                   </h2>
                 </div>
@@ -48,7 +47,7 @@ const Greencard = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center gap-4 mt-1">
-                  <Link to="https://wa.link/wj8kss">
+                  <Link href="https://wa.link/wj8kss">
                     <button className="gradient-btn text-white px-8 py-3.5 text-sm sm:text-base font-semibold rounded-full shadow-lg inline-flex items-center gap-2 group">
                       Enroll Now
                       <FiArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -59,10 +58,12 @@ const Greencard = () => {
 
               {/* Image column */}
               <div className="flex-shrink-0 w-full max-w-[220px] sm:max-w-[260px] lg:max-w-[320px] mx-auto lg:mx-0">
-                <img
+                <Image
                   className="w-full rounded-2xl shadow-2xl shadow-black/30 animate-float hover:scale-105 transition-transform duration-500 object-cover"
                   src="/discount.jpg"
                   alt="Discount offer"
+                  width={320}
+                  height={320}
                 />
               </div>
             </div>
@@ -119,7 +120,6 @@ const Greencard = () => {
             </div>
           </div>
 
-        
           <div className="relative overflow-hidden bg-gradient-to-r from-brand-orange-500 via-brand-orange-400 to-brand-teal-500 rounded-3xl p-8 sm:p-10 md:p-14 text-center text-white shadow-xl">
 
             <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.12),transparent)] pointer-events-none" />
@@ -140,7 +140,7 @@ const Greencard = () => {
                 who are passionate about technology and innovation.
               </p>
 
-              <Link to="https://wa.link/wj8kss">
+              <Link href="https://wa.link/wj8kss">
                 <button className="bg-white text-brand-orange-600 font-bold px-9 py-3.5 rounded-full text-sm sm:text-base hover:bg-gray-50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-pulse-glow inline-flex items-center gap-2 group">
                   Join Our Community
                   <FiArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />

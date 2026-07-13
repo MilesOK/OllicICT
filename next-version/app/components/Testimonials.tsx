@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -5,22 +6,22 @@ const testimonials = [
     name: "Daniel Anthony",
     role: "Frontend Developer",
     text: "Ollic ICT completely transformed my career path. The instructors are top-notch and the curriculum is constantly updated with modern tech stacks.",
-    image: "/Dan.jpeg"
+    image: "/Dan.jpeg",
   },
   {
     id: 2,
     name: "Michael Chen",
     role: "UI/UX Designer",
     text: "The web design courses offered by Ollic ICT gave me the practical skills I needed to land my dream job. Highly recommend their hands-on approach!",
-    image: "https://randomuser.me/api/portraits/men/32.jpg"
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {
     id: 3,
     name: "Amanda Ross",
     role: "Data Analyst",
     text: "I was amazed by the depth of the data analytics program. The supportive community and expert mentors made learning complex concepts a breeze.",
-    image: "https://randomuser.me/api/portraits/women/68.jpg"
-  }
+    image: "https://randomuser.me/api/portraits/women/68.jpg",
+  },
 ];
 
 const Testimonials = () => {
@@ -29,7 +30,7 @@ const Testimonials = () => {
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-teal-500/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-orange-500/10 rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>
-      
+
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="heading-xl heading-gradient-underline mb-6 text-gray-900">What Our Students Say</h2>
@@ -44,12 +45,18 @@ const Testimonials = () => {
               <div className="absolute -top-6 -right-6 text-orange-400/20 text-8xl font-serif"></div>
               <div className="flex-grow">
                 <p className="text-gray-700 italic leading-relaxed mb-8 relative z-10">
-                  "{testimonial.text}"
+                  &ldquo;{testimonial.text}&rdquo;
                 </p>
               </div>
               <div className="flex items-center gap-4 mt-auto">
-                <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-teal-500/30">
-                  <img src={testimonial.image} alt={testimonial.name} className="w-full h-full object-cover" />
+                <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-teal-500/30 relative flex-shrink-0">
+                  <Image
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    fill
+                    sizes="56px"
+                    className="object-cover"
+                  />
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
