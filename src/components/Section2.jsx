@@ -3,7 +3,6 @@ import backend from '../assets/backend.jpg'
 import frontend from '../assets/frontend.svg'
 import fullstack from '../assets/fullstack.jpg'
 import mobile from '../assets/mobile.jpg'
-import { Link } from 'react-router-dom'
 
 
 function Section2() {
@@ -13,21 +12,21 @@ function Section2() {
       description: 'Become a frontend engineer amd build seamless user interface and user experience logic.',
       duration: '4 Months',
       students: '120+',
-      image: frontend,
+      image: frontend.src,
     },
     {
       title: 'Backend Engineering',
       description: 'Build powerful web applications using our tailored backend engineering course outline.',
       duration: '4 Months',
       students: '100+',
-      image: backend,
+      image: backend.src,
     },
     {
       title: 'Full Stack Web Development',
       description: 'Become a FullStack web developer Maestro with building fully functional web apps.',
       duration: '6 Months',
       students: '50+',
-      image: fullstack,
+      image: fullstack.src,
     },
     {
       title: 'Mobile App Development',
@@ -42,7 +41,7 @@ function Section2() {
       description: 'Everything can be done using python - Web, Mobile, AI, Data! Get started Today!',
       duration: '5 Months',
       students: '80+',
-      image: mobile,
+      image: mobile.src,
     },
     {
       title: 'Cloud Computing',
@@ -112,11 +111,11 @@ function Section2() {
                     </svg>
                     {course.duration}
                   </span>
-                  <Link to="https://wa.link/wj8kss">
+                  <a href="https://wa.link/wj8kss">
                   <button className="gradient-btn text-white text-sm px-5 py-2 rounded-full font-semibold">
                     Enroll Now
                   </button>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

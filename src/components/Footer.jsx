@@ -12,7 +12,8 @@ function Footer() {
 
           {/* Brand Column */}
           <div>
-            <img src={'/logo1.png'} alt="logo" className="md:h-[55px] h-[45px] mb-5" />
+            {/* <img src={'/logo1.png'} alt="logo" className="md:h-[55px] h-[45px] mb-5" /> */}
+            <h2 className="text-6xl md:text-3xl font-extrabold tracking-tighter bg-gradient-to-r from-teal-600 to-teal-400 bg-clip-text text-transparent drop-shadow-sm">Ollic <span className="bg-gradient-to-r from-orange-500 to-orange-400 bg-clip-text text-transparent">ICT</span></h2>
             <p className="text-gray-400 text-sm leading-6 max-w-sm">
               Edet Akpan Avenue, Uyo, Akwa Ibom State.
               Opening Hours: Monday - Friday (8am - 5pm)

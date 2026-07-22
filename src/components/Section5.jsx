@@ -12,7 +12,20 @@ import img11 from '../assets/img11.jpg'
 import img12 from '../assets/img12.jpg'
 
 function Section5() {
-  const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12];
+  const images = [
+    img1.src,
+    img2.src,
+    img3.src,
+    img4.src,
+    img5.src,
+    img6.src,
+    img7.src,
+    img8.src,
+    img9.src,
+    img10.src,
+    img11.src,
+    img12.src,
+  ];
 
   return (
     <section className="section-padding bg-white">
