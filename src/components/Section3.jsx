@@ -16,7 +16,7 @@ function Section3() {
               {/* Gradient ring */}
               <div className="absolute -inset-3 bg-gradient-to-br from-teal-400 via-teal-600 to-orange-400 rounded-full opacity-20 blur-sm" />
               <img
-                src={about}
+                src={about.src}
                 alt="About Ollic ICT Academy"
                 className="relative h-[300px] w-[300px] md:h-[420px] md:w-[420px] rounded-full object-cover shadow-2xl shadow-teal-900/10 border-4 border-white"
               />

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { FiCheck, FiArrowRight } from "react-icons/fi";
 import { HiOutlineSparkles } from "react-icons/hi2";
 
@@ -48,12 +47,12 @@ const Greencard = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center gap-4 mt-1">
-                  <Link to="https://wa.link/wj8kss">
+                  <a href="https://wa.link/wj8kss">
                     <button className="gradient-btn text-white px-8 py-3.5 text-sm sm:text-base font-semibold rounded-full shadow-lg inline-flex items-center gap-2 group">
                       Enroll Now
                       <FiArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </button>
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -140,12 +139,12 @@ const Greencard = () => {
                 who are passionate about technology and innovation.
               </p>
 
-              <Link to="https://wa.link/wj8kss">
+              <a href="https://wa.link/wj8kss">
                 <button className="bg-white text-brand-orange-600 font-bold px-9 py-3.5 rounded-full text-sm sm:text-base hover:bg-gray-50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-pulse-glow inline-flex items-center gap-2 group">
                   Join Our Community
                   <FiArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                 </button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

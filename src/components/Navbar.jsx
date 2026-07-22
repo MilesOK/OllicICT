@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
-import logo from '../assets/logo.jpg';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -35,7 +34,7 @@ const Navbar = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
-          <Link to="/" className="flex-shrink-0">
+          <Link href="/" className="flex-shrink-0">
             {/* <img
               src={'/logo.png'}
               alt="Ollic Logo"
@@ -55,11 +54,11 @@ const Navbar = () => {
                 {item.text}
               </a>
             ))}
-            <Link to="https://wa.link/wj8kss">
+            <a href="https://wa.link/wj8kss">
             <button className="ml-6 gradient-btn-teal text-white font-semibold h-11 px-7 rounded-full text-sm tracking-wide">
               Register
             </button>
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Navigation Icon */}
@@ -96,7 +95,7 @@ const Navbar = () => {
       >
         {/* Drawer Header */}
         <div className="flex items-center justify-between p-5 border-b border-gray-100/50">
-          <Link to="/" onClick={closeNav}>
+          <Link href="/" onClick={closeNav}>
             <h2 className="text-2xl font-extrabold tracking-tighter bg-gradient-to-r from-teal-600 to-teal-400 bg-clip-text text-transparent drop-shadow-sm">Ollic <span className="bg-gradient-to-r from-orange-500 to-orange-400 bg-clip-text text-transparent">ICT</span></h2>
           </Link>
           <button
@@ -133,11 +132,11 @@ const Navbar = () => {
           }`}
           style={{ transitionDelay: `${nav ? navItems.length * 100 + 150 : 0}ms` }}
         >
-          <Link to="https://wa.link/wj8kss" onClick={closeNav}>
+          <a href="https://wa.link/wj8kss" onClick={closeNav}>
             <button className="w-full gradient-btn-teal text-white font-semibold h-12 rounded-xl text-base tracking-wide shadow-lg shadow-teal-500/25 hover:shadow-teal-500/40 transition-all duration-300 transform hover:-translate-y-0.5">
               Register Now
             </button>
-          </Link>
+          </a>
         </div>
       </div>
 

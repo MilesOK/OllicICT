@@ -1,6 +1,5 @@
 
 import hero from '../assets/hero.png'
-import { Link } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'
 
 function AnimatedStat({ value, label, color }) {
@@ -73,11 +72,11 @@ function Section1() {
                 With our hands-on training, personalized career coaching, and a network of industry connections, we'll
                 have you ready to launch your Tech career in just 6 months
               </p>
-              <Link to="https://wa.link/wj8kss">
+              <a href="https://wa.link/wj8kss">
                 <button className="gradient-btn mt-7 text-white px-9 py-3.5 text-base font-semibold rounded-full shadow-lg">
                   Enroll Now
                 </button>
-              </Link>
+              </a>
 
               {/* Stats */}
               <div className="grid grid-cols-3 gap-3 md:gap-5 pt-8 md:pt-10">
@@ -96,7 +95,7 @@ function Section1() {
 
               <div className="relative">
                 <img
-                  src={hero}
+                  src={hero.src}
                   alt="Student with laptop"
                   className="w-full max-w-md lg:max-w-lg h-auto relative z-10 drop-shadow-2xl"
                 />

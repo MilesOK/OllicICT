@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 const secondary = () => {
 
   return (
@@ -20,11 +18,11 @@ const secondary = () => {
         <p className="text-base md:text-lg text-white/80 max-w-2xl leading-relaxed">
           While awaiting university admission, enroll in our program to become proficient with computers and build a solid foundation in Software Development
         </p>
-        <Link to="https://wa.link/wj8kss">
+        <a href="https://wa.link/wj8kss">
           <button className="gradient-btn text-white font-semibold px-9 py-3.5 rounded-full text-base mt-2 shadow-lg">
             Enroll Now
           </button>
-        </Link>
+        </a>
       </div>
     </section>
   )

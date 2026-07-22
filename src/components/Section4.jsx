@@ -49,7 +49,7 @@ function Section4() {
             <div className="relative">
               <div className="absolute -inset-6 bg-gradient-to-br from-teal-100 to-orange-100 rounded-3xl opacity-50 blur-md pointer-events-none" />
               <img
-                src={whotoenroll}
+                src={whotoenroll.src}
                 alt="Who can enroll illustration"
                 className="relative w-full max-w-sm drop-shadow-lg"
               />
